@@ -91,7 +91,7 @@
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "async": true,
-                "viewPath": "sap.training.exc.view",
+                "viewPath": "exercise.view",
                 "controlAggregation": "pages",
                 "controlId": "<...>"
             },
