@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
-        html, body, body > div, #container, #container-uiarea {
+        html,
+        body,
+        body>div,
+        #container,
+        #container-uiarea {
             height: 100%;
         }
     </style>
     <title>Exercise Application</title>
- <script
- src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
-        id="sap-ui-bootstrap"
-        data-sap-ui-theme="sap_horizon_dark"
-        data-sap-ui-libs="sap.m,sap.ui.layout"
+    <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" id="sap-ui-bootstrap"
+        data-sap-ui-theme="sap_horizon_dark" 
         data-sap-ui-compatVersion="edge"
         data-sap-ui-preload="async"
-                data-sap-ui-oninit="module:exercise/index"
-
-        data-sap-ui-resourceroots='{"exercise": "./"}'
-        >   </script>
+        data-sap-ui-on-init="module:sap/ui/core/ComponentSupport"
+        data-sap-ui-resourceroots='{"exercise": "./"}'>   </script>
 
 
 </head>
-<body>
-    <div class="sapUiBody" id="content"></div>
+
+<body class="sapUiBody" id="content">
+        <div data-sap-ui-component data-id="container" data-name="exercise" data-settings='{"id" : "container"}'></div>
 
 
 
 </body>
+
 </html>

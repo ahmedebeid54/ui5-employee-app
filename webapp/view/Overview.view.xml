@@ -1,7 +1,15 @@
-<mvc:View controllerName="sap.training.exc.controller.Overview"
+<mvc:View controllerName="exercise.controller.Overview"
           xmlns:mvc="sap.ui.core.mvc"  
           xmlns="sap.m">
+<Page title="Search For Customer">
+<content>
+
+<Input type="Number" id="searchInput" placeholder="Search..." liveChange="onSearch" />
+
+</content>
 
 
+
+</Page>
    
 </mvc:View>

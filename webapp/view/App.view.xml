@@ -1,0 +1,43 @@
+<mvc:View controllerName="exercise.controller.App"
+xmlns:mvc="sap.ui.core.mvc" 
+        xmlns:f="sap.ui.layout.form"
+        xmlns="sap.m"
+        xmlns:core="sap.ui.core"
+        displayBlock="true">
+       <Page title="Customer Management" showNavButton="true" navButtonPress=".onNavBack">
+       <content>
+       <f:SimpleForm id="SimpleForm" editable="true" class="sapUiResponsiveMargin ">
+       <f:toolbar>
+       <Toolbar> 
+       <content>
+       <ToolbarSpacer ></ToolbarSpacer>
+         <Button text="create customer" id="createCustomerButton" icon="sap-icon://create" press="onSubmitCustomer"/>
+       
+        </content></Toolbar>
+       </f:toolbar>
+            <f:content>
+                <Label text="First Name"/>
+                <Input value="{/firstName}"/>
+                <Label text="Last Name"/>
+                <Input value="{/lastName}"/>
+                <Label text="Email"/>
+                <Input value="{/email}"/>
+                <Label text="Phone Number"/>
+                <Input value="{/phoneNumber}"/>
+            </f:content>
+        </f:SimpleForm> 
+        <Shell class="">
+        <App>
+        <pages>
+        <mvc:XMLView viewName="exercise.view.Overview" />
+        </pages>
+        </App>
+        </Shell>
+
+       
+       </content>
+       
+       
+       </Page>
+       
+  </mvc:View>        

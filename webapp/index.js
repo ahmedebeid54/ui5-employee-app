@@ -1,21 +1,22 @@
-sap.ui.define(["sap/ui/core/mvc/XMLView"],
+// no need of index.js after we attached the component to the index.html file, so we can delete this file
 
-    function (XMLView) {
-
-        "use strict";
-        XMLView.create({
-            id: "exercise.view.app",
-            "viewName": "exercise.view.app"
-
-        }).then(function (oView) {
-            oView.placeAt("content");
-        });
-        // var oText = new Text({
-        //     text: "Hello World !!"
-
-        // })
-        // oText.placeAt("content");
-    }
+//=========================================================================================//
 
 
-)
+
+
+
+// sap.ui.define(["sap/ui/core/ComponentContainer"], function (ComponentContainer) {
+//   "use strict";
+//   var oContainer = new ComponentContainer({
+//       id: "container",
+//       name: "exercise",
+//       manifest: true,
+//       async: true,
+//       settings: {
+//         id: "exercise"
+//       }
+//   });
+//   oContainer.placeAt("content");
+
+// });

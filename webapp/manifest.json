@@ -1,7 +1,7 @@
 {
     "_version": "1.28.0",
     "sap.app": {
-        "id": "<...>",
+        "id": "exercise",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -59,7 +59,7 @@
             }
         },
         "contentDensities": {
-            "compact": false,
+            "compact": true,
             "cozy": true
         },
         "models": {
@@ -69,7 +69,7 @@
                     "bundleName": "<...>"
                 }
             },
-            "ODataModel": {
+             "ODataModel": {
                 "dataSource": "<...>",
                 "settings": {
                     "synchronizationMode": "None",
@@ -99,7 +99,7 @@
             "targets": {}
         },
         "rootView": {
-            "viewName": "<...>",
+            "viewName": "exercise.view.App",
             "type": "XML",
             "async": true,
             "id": "App"

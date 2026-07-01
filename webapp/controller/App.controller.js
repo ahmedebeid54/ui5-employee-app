@@ -3,12 +3,14 @@ sap.ui.define([
     function(Controller, MessageToast, MessageBox){
         "use strict";
 return Controller.extend("exercise.controller.App",{
-    onSubmitPress: function(){
-        var oComboBox = this.getView().byId("comboBox");
-        var sSelectedKey = oComboBox.getSelectedKey();
-        MessageToast.show("Welcome....Selected Key is: " + sSelectedKey);
-        MessageBox.information("Welcome....Selected Key is: " + sSelectedKey);
-    }
+    onSubmitCustomer: function(){
+         MessageToast.show("Customer submitted successfully");
+  
 
+    }
+,       onInit: function(){
+            var sClass = this.getOwnerComponent().getConentDenistyClass();
+           this.getView().addStyleClass(sClass);
+        }
 })
     })
